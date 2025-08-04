@@ -14,19 +14,41 @@
       padding: 20px;
     }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
     header {
       background-color: #ffffff;
       padding: 20px;
       border-bottom: 2px solid #ccc;
     }
 
-    header h1 {
-      margin: 0;
+    .top-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    header h2 {
-      font-size: 1rem;
-      margin: 5px 0 0;
+    .top-header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .contact-info a {
+      color: #0077b5;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
 
     section {
@@ -44,33 +66,24 @@
 
     a {
       color: #0077b5;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     ul {
       padding-left: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Ayyappa Reddy Thummalapally</h1>
-      <h2>
-        Tampa, FL, 33613 |
-        <a href="mailto:Ayyappapw@gmail.com">Ayyappapw@gmail.com</a> |
-        551-227-5978 |
-        <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a>
-      </h2>
+      <div class="top-header">
+        <h1>Ayyappa Reddy Thummalapally</h1>
+        <div class="contact-info">
+          📞 551-227-5978 |
+          📧 <a href="mailto:Ayyappapw@gmail.com">Ayyappapw@gmail.com</a> |
+          🔗 <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a>
+        </div>
+      </div>
     </header>
 
     <section>
@@ -113,6 +126,7 @@
 
     <section>
       <h3>Professional Experience</h3>
+
       <p><strong>Powerweave Software Services Private Limited</strong> – QA Engineer<br/>
         <em>March 2022 – Dec 2023 | Mumbai, India</em><br/>
         Clients: <a href="https://www.winepark.com" target="_blank">WinePark</a>, 
